@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>org.aptkode.ai-plugin</id>
+    <name>AI-plugin</name>
+    <version>1.0</version>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="HelloAction"
+                class="org.example.HelloAction"
+                text="My plugin hello">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>

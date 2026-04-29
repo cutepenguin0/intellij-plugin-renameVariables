@@ -1,0 +1,41 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/proba">
+          <value>
+            <RecentProjectMetaInfo frameTitle="proba – Main.java" projectWorkspaceId="3CxVotCveVIkgE2ws7txdxUcsnb">
+              <option name="activationTimestamp" value="1777327782337" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-233.11799.241" />
+              <option name="buildTimestamp" value="1701493500000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="155" y="54" width="1400" height="952" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1777327765970" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/untitled2">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="3CyjgDp3Sp3fRDotd5gPOKHR7QP">
+              <option name="activationTimestamp" value="1777364812566" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-233.11799.241" />
+              <option name="buildTimestamp" value="1701493500000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1777364812784" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/IdeaProjects/untitled2" />
+    <option name="lastProjectLocation" value="$USER_HOME$/IdeaProjects" />
+  </component>
+</application>
