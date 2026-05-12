@@ -37,10 +37,12 @@ Suggests expanded names based on the current variable name.
 ### Build plugin:
 ```bash
 ./gradlew buildPlugin
+```
 
 ### Run in development
 ```bash
 ./gradlew runIde
+```
 
 ---
 ## **Author's note**
