@@ -8,3 +8,4 @@ FsRecords.SYMLINK_TARGET
 kotlin-is-binary-compiled
 6fcf84fa
 contractInference
+BytecodeAnalysisIndex

@@ -1,0 +1,10 @@
+<application>
+  <component name="GeneralSettings">
+    <option name="showTipsOnStartup" value="false" />
+  </component>
+  <component name="Registry">
+    <entry key="enable.connection.configuration.widget" value="false" source="SYSTEM" />
+    <entry key="ide.text.fractional.metrics" value="[Auto|Disabled|Enabled*]" source="SYSTEM" />
+    <entry key="editor.text.fractional.metrics" value="[Auto|Disabled|Enabled*]" source="SYSTEM" />
+  </component>
+</application>

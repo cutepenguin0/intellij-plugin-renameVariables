@@ -1,0 +1,30 @@
+<application>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Inter" />
+    <option name="fontSize" value="13.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "251.23774.435",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@client_Dark",
+    "registry.to.advanced.settings.migration.build": "IC-251.23774.435",
+    "rider.trace.scenarios": ""
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

@@ -7,9 +7,9 @@
     </extensions>
 
     <actions>
-        <action id="HelloAction"
-                class="org.example.HelloAction"
-                text="My plugin hello">
+        <action id="ai-plugin"
+                class="org.plugin.RenameVariablesAction"
+                text="Rename Local Variables">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>

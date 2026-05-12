@@ -1,33 +1,34 @@
 <application>
-  <component name="FileEditorProviderManager"><![CDATA[{}]]></component>
+  <component name="FileEditorProviderManager">{}</component>
   <component name="LangManager">
     <option name="languageName" value="JAVA" />
   </component>
   <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
     <option name="presentationModeIdeScale" value="1.75" />
   </component>
-  <component name="PropertyService"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
-    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
-    "RunOnceActivity.git.modal.commit.toggle": "true",
-    "experimental.ui.on.first.startup": "true",
-    "experimental.ui.used.version": "251.23774.435",
-    "fileTypeChangedCounter": "1",
-    "fontSizeToResetConsole": "13.0",
-    "fontSizeToResetEditor": "13.0",
-    "installed.kotlin.plugin.version": "251.23774.435-IJ",
-    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
-    "migrated.non.roamable.values.from.general.settings": "true",
-    "previousColorScheme": "_@user_Dark",
-    "registry.to.advanced.settings.migration.build": "IC-251.23774.435",
-    "terminal.gen.one.option.visible": "false"
+  <component name="PropertyService">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.VFSInitializationConditionsToFusReporter&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.modal.commit.deprecation.notification&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.modal.commit.toggle&quot;: &quot;true&quot;,
+    &quot;experimental.ui.on.first.startup&quot;: &quot;true&quot;,
+    &quot;experimental.ui.used.version&quot;: &quot;251.23774.435&quot;,
+    &quot;fileTypeChangedCounter&quot;: &quot;1&quot;,
+    &quot;fontSizeToResetConsole&quot;: &quot;13.0&quot;,
+    &quot;fontSizeToResetEditor&quot;: &quot;13.0&quot;,
+    &quot;installed.kotlin.plugin.version&quot;: &quot;251.23774.435-IJ&quot;,
+    &quot;llm.installer.last.toolwindow.state&quot;: &quot;LLM_INSTALLER&quot;,
+    &quot;migrated.non.roamable.values.from.general.settings&quot;: &quot;true&quot;,
+    &quot;previousColorScheme&quot;: &quot;_@user_Dark&quot;,
+    &quot;registry.to.advanced.settings.migration.build&quot;: &quot;IC-251.23774.435&quot;,
+    &quot;terminal.gen.one.option.visible&quot;: &quot;false&quot;
   },
-  "keyToStringList": {
-    "fileTypeDetectors": [
-      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
-      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+  &quot;keyToStringList&quot;: {
+    &quot;fileTypeDetectors&quot;: [
+      &quot;com.intellij.ide.scratch.ScratchFileServiceImpl$Detector&quot;,
+      &quot;org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector&quot;
     ]
   }
-}]]></component>
+}</component>
 </application>
