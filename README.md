@@ -15,7 +15,7 @@ Example:
 - `String` → `name`, `label`, `text`, `description`
 - `int` → `count`, `value`, `index`
 
-### 2. Abbreviation-based suggestions
+### 2. Name-based suggestions
 Suggests expanded names based on the current variable name.
 
 ---
