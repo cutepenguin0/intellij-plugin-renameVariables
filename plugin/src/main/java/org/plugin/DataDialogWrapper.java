@@ -12,6 +12,8 @@ public class DataDialogWrapper extends DialogWrapper {
     private String method;
     private List<String> variables;
     private final java.util.List<JCheckBox> checkBoxes = new java.util.ArrayList<>();
+    private JRadioButton typeBtn;
+    private JRadioButton nameBtn;
     protected DataDialogWrapper(String m, List<String> v) {
         super(true);
         method = m;
@@ -40,9 +42,23 @@ public class DataDialogWrapper extends DialogWrapper {
             checkBoxes.add(cb);
             variablePanel.add(cb);
         }
+        JPanel strategyPanel = new JPanel();
+        strategyPanel.setLayout(new BoxLayout(strategyPanel, BoxLayout.Y_AXIS));
+        strategyPanel.setBorder(BorderFactory.createTitledBorder("Suggestion strategy:"));
+        JLabel question2 = new JLabel("Do you want suggestions based on type or name?");
+        strategyPanel.add(question2);
+        ButtonGroup group = new ButtonGroup();
+        typeBtn = new JRadioButton("Based on type",true);
+        nameBtn = new JRadioButton("Based on name");
+        group.add(typeBtn);
+        group.add(nameBtn);
+        strategyPanel.add(typeBtn);
+        strategyPanel.add(nameBtn);
         centralPanel.add(methodPanel);
         centralPanel.add(Box.createVerticalStrut(10));
         centralPanel.add(variablePanel);
+        centralPanel.add(Box.createVerticalStrut(10));
+        centralPanel.add(strategyPanel);
         return centralPanel;
     }
 
@@ -54,5 +70,11 @@ public class DataDialogWrapper extends DialogWrapper {
             }
         }
         return selected;
+    }
+
+    public String getSelectedStrategy() {
+        if (typeBtn.isSelected()) return "type";
+        if (nameBtn.isSelected()) return "name";
+        return "type";
     }
 }

@@ -4,7 +4,6 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.editor.Editor;
-import com.intellij.openapi.ui.Messages;
 import com.intellij.psi.*;
 import com.intellij.psi.util.PsiTreeUtil;
 import org.jetbrains.annotations.NotNull;
@@ -15,6 +14,7 @@ import java.util.List;
 
 public class RenameVariablesAction extends AnAction {
     private String prompt;
+    private List<SelectedVariables> allLocalVariablesList = new ArrayList<>();
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
         Editor editor = e.getData(CommonDataKeys.EDITOR);
@@ -23,12 +23,22 @@ public class RenameVariablesAction extends AnAction {
         List<String> variable = getVariableName(editor, file);
         String method = getFullMethod(editor, file);
         DataDialogWrapper dialog = new DataDialogWrapper(method, variable);
-        List<String> selected = null;
+        List<String> selectedVariablesString = null;
+        String selectedStrategy = null;
+        List<SelectedVariables> selectedVariablesObjects = null;
         if (dialog.showAndGet()) {
-            selected = dialog.getSelectedVariables();
+            selectedVariablesString = dialog.getSelectedVariables();
+            selectedStrategy = dialog.getSelectedStrategy();
+            selectedVariablesObjects = new ArrayList<>();
+
+            for (SelectedVariables var : allLocalVariablesList) {
+                if (selectedVariablesString.contains(var.getOldName())) {
+                    selectedVariablesObjects.add(var);
+                }
+            }
         }
-        if (selected != null && !selected.isEmpty()) {
-            ResultDialogWrapper resultDialog = new ResultDialogWrapper(selected);
+        if (selectedVariablesObjects != null && !selectedVariablesObjects.isEmpty()) {
+            ResultDialogWrapper resultDialog = new ResultDialogWrapper(selectedVariablesObjects, selectedStrategy);
             resultDialog.show();
         }
     }
@@ -44,7 +54,7 @@ public class RenameVariablesAction extends AnAction {
         Collection<PsiLocalVariable> variables = PsiTreeUtil.findChildrenOfType(method, PsiLocalVariable.class);
         List<String> result = new ArrayList<>();
         for (PsiLocalVariable var : variables) {
-            var.getName();
+            allLocalVariablesList.add(new SelectedVariables(var.getName(), var.getType().getPresentableText()));
             result.add(var.getName());
         }
 
