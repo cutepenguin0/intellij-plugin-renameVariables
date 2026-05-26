@@ -4,8 +4,6 @@ This IntelliJ IDEA plugin helps developers quickly rename local variables using 
 It provides a dialog that analyzes selected variables and offers naming suggestions to improve code readability.
 
 ---
-##  How does renaming work?
-
 The plugin currently supports two strategies:
 
 ### 1. Type-based suggestions
